@@ -8,14 +8,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=qmi_wwan_q
-PKG_VERSION:=3.0
-PKG_RELEASE:=2
+PKG_VERSION:=1.2.9
+PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/kernel.mk
 include $(INCLUDE_DIR)/package.mk
 
 define KernelPackage/qmi_wwan_q
-  SUBMENU:=qmiwwan Support
+  SUBMENU:=WWAN Support
   TITLE:=Quectel Linux USB QMI WWAN Driver
   DEPENDS:=+kmod-usb-net +kmod-usb-wdm
   FILES:=$(PKG_BUILD_DIR)/qmi_wwan_q.ko

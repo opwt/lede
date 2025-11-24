@@ -276,7 +276,6 @@ foreach my $mirror (@ARGV) {
 		push @mirrors, "https://mirrors.tencent.com/gnu/$1";
 		push @mirrors, "https://mirror.csclub.uwaterloo.ca/gnu/$1";
 		push @mirrors, "https://mirror.netcologne.de/gnu/$1";
-		push @mirrors, "http://ftp.kddilabs.jp/GNU/gnu/$1";
 		push @mirrors, "http://www.nic.funet.fi/pub/gnu/gnu/$1";
 		push @mirrors, "http://mirror.internode.on.net/pub/gnu/$1";
 		push @mirrors, "http://mirror.navercorp.com/gnu/$1";
@@ -314,12 +313,8 @@ foreach my $mirror (@ARGV) {
 		push @mirrors, "https://download.gnome.org/sources/$1";
 		push @mirrors, "https://mirror.csclub.uwaterloo.ca/gnome/sources/$1";
 		push @mirrors, "http://ftp.acc.umu.se/pub/GNOME/sources/$1";
-		push @mirrors, "http://ftp.kaist.ac.kr/gnome/sources/$1";
-		push @mirrors, "http://www.mirrorservice.org/sites/ftp.gnome.org/pub/GNOME/sources/$1";
-		push @mirrors, "http://mirror.internode.on.net/pub/gnome/sources/$1";
-		push @mirrors, "http://ftp.belnet.be/ftp.gnome.org/sources/$1";
-		push @mirrors, "ftp://ftp.cse.buffalo.edu/pub/Gnome/sources/$1";
-		push @mirrors, "ftp://ftp.nara.wide.ad.jp/pub/X11/GNOME/sources/$1";
+		push @mirrors, "http://ftp.cse.buffalo.edu/pub/Gnome/sources/$1";
+		push @mirrors, "http://ftp.nara.wide.ad.jp/pub/X11/GNOME/sources/$1";
 	} else {
 		push @mirrors, $mirror;
 	}
